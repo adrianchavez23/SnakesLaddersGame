@@ -16,6 +16,9 @@ public class Jugador {
   }
 
   public int getPosicion(){
+    if(posicion > 29){
+      return 29;
+    }
     return posicion;
   }
 

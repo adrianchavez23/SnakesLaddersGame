@@ -36,7 +36,7 @@ public class Juego {
             Tablero[jugador1.getPosicion()].llenar();
 
             if (!Tablero[29].isVacia()){
-                ganador.setName(jugador1.getName());
+                ganador = jugador1;
                 break;
             }
             int casillasMov1 = Tablero[jugador1.getPosicion()].getCasillasMov();
@@ -63,7 +63,7 @@ public class Juego {
             Tablero[jugador2.getPosicion()].llenar();
 
             if (!Tablero[29].isVacia()){
-                ganador.setName(jugador2.getName());
+                ganador = jugador2;
                 break;
             }
             int casillasMov2 = Tablero[jugador2.getPosicion()].getCasillasMov();
@@ -91,9 +91,9 @@ public class Juego {
   }
 
   public void reporteJuego(){
-    System.out.println("\"---------------------------------------------");
-    System.out.println("\nGANADOR: " + ganador.getName() + "con " + (numeroTurnos) + " turnos.");
-    System.out.println("\"---------------------------------------------");
+    System.out.println("\n---------------------------------------------");
+    System.out.println("\nGANADOR: " + ganador.getName() + " con " + (numeroTurnos) + " turnos.");
+    System.out.println("\n---------------------------------------------");
   }
 
   private int aterrizaCasillaText(int posicionJugador){

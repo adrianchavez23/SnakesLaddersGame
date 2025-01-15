@@ -7,7 +7,7 @@ public class App {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Bienvenido a Serpientes y Escaleras!\n\nEscribe tu nombre:");
+        System.out.print("Bienvenido a Serpientes y Escaleras!\n\nEscribe tu nombre:  ");
         String playerName = scanner.next();
 
         Jugador mainPlayer = new Jugador(playerName);
